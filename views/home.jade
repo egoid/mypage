@@ -1,0 +1,21 @@
+html
+  head
+    title your man cave, baby
+    // Import Framaterial.css
+    link(type='text/css', rel='stylesheet', href='styles/framaterial.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lemonade/2.1.0/lemonade.css')
+  body
+    .panel.center-force
+      h1#name  welcome to your man cave, baby
+      p
+      br
+      br
+      span#status
+      img#uploadedImage
+      a#logout.material-btn-blue(href='javascript:void(0)', style='float:right')
+        span.m-icon.md-content-add.right
+        |  logout
+    // Import jQuery before Framaterial.js
+    script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(type='text/javascript', src='scripts/framaterial.min.js')
+    script(type='text/javascript', src='scripts/home.js')

@@ -1,0 +1,45 @@
+html
+  head
+    title man cave, baby
+    // Import Framaterial.css
+    link(type='text/css', rel='stylesheet', href='styles/framaterial.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lemonade/2.1.0/lemonade.css')
+  body
+    .panel.center-force
+      h1  this be the entrance to your man cave
+      a#clickreg.material-btn-red(href='javascript:void(0)')
+        span.m-icon.md-navigation-cancel.right
+        |  Register
+      a#clicklog.material-btn-blue(href='javascript:void(0)', style='float:right')
+        span.m-icon.md-content-add.right
+        |  login
+    .bit-3(style='float:right')
+      #log.m-card(data-background-url='../../images/samples/header_sample_2.png', data-depth='3',style='opacity:0')
+        section.inner__card
+          p
+            | Login
+            .bit-2
+              input#loginuser.m-input-black(type='text', placeholder='name')
+              input#loginpass.m-input-red(type='password', placeholder='password')
+        footer
+          a.material-btn-flat-red(href='#') Cancel
+          a#login.material-btn-flat-lightblue(href='#') Ok
+    .bit-3
+      #reg.m-card(data-background-url='../../images/samples/header_sample_2.png', data-depth='3',style='opacity:0')
+        section.inner__card
+          p
+            | New User Registration
+            .bit-2
+              input#newuser.m-input-black(type='text', placeholder='name')
+              input#newpass.m-input-red(type='password', placeholder='password')
+              br
+              input#newpass2.m-input-red(type='password', placeholder='retype password')
+        footer
+          a.material-btn-flat-red(href='#') Cancel
+          a#clicknewuser.material-btn-flat-lightblue(href='#') Ok
+    // Import jQuery before Framaterial.js
+    script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(type='text/javascript', src='scripts/framaterial.min.js')
+    script(src='scripts/main.js')
+      </body>
+      </html>
